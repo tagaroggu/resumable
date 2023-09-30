@@ -1,0 +1,25 @@
+{
+    "name": "resumable",
+    "version": "0.0.0",
+    "type": "module",
+    "source": "./src/index.ts",
+    "main": "./dist/resumable.cjs",
+    "module": "./dist/resumable.module.js",
+    "unpkg": "./dist/resumable.umd.js",
+    "exports": {
+        "require": "./dist/resumable.cjs",
+        "default": "./dist/resumable.modern.js",
+        "types": "./dist/index.d.ts"
+    },
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "check": "tsc",
+        "build": "microbundle",
+        "dev": "microbundle watch"
+    },
+    "devDependencies": {
+        "@tagaroggu/ts": "github:tagaroggu/ts#v0.2.0",
+        "microbundle": "^0.15.1",
+        "typescript": "^5.2.2"
+    }
+}
